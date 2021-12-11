@@ -1,0 +1,283 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    background-color: #171619;
+    color: #FFFFFF;
+    overflow-x: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+}
+
+
+
+
+
+.navbar{
+    background-color: #171619 !important;
+    padding: 10px 120px;
+}
+
+
+
+.nav-link, .navbar-brand{
+    color: #FFFF !important;
+}
+
+
+.header{
+    position: relative;
+    height: 500px;
+    
+    background-image: linear-gradient(rgba(0, 0, 0, .05), rgba(0, 0, 0, .05)), url('./img/header.jpg');
+    background-position: center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+
+.header-box{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+
+.header-box-img{
+    position: absolute;
+    top: 55%;
+    right: -12%;
+    transform: translate(-50%, -50%);
+}
+
+.header-box-content{
+    width: 500px;
+    letter-spacing: 2px;
+    line-height: 1.8;
+}
+
+.text-span-1{
+    color: #60F5F9;
+}
+
+.text-span-2{
+    color: #6748DB;
+}
+
+
+
+.header-box-content-buttons{
+    margin-top: 30px;
+    display: flex-start;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.header-box-content-buttons a{
+    border: 2px solid #222;
+    border-radius: 15px;
+    color: #fff;
+    padding: 10px 15px;
+}
+
+.btn-1{
+    border: 2px solid #222;
+    border-radius: 15px;
+    color: #fff;
+    padding: 10px 15px;
+    border: 2px solid #60F5F9 !important;
+    margin-top: 20px !important;
+    display: inline-block !important;
+}
+
+
+.btn-2{
+    border: 2px solid #222;
+    border-radius: 15px;
+    color: #fff;
+    padding: 10px 15px;
+    border: 2px solid #6748DB !important;
+    margin-top: 20px !important;
+    display: inline-block !important;
+}
+
+
+.about{
+    padding: 100px 0;
+}
+
+
+.about-icon-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.about-icon-box p{
+    width: 80%;
+    font-size: .8rem;
+    margin-top: 1rem;
+}
+
+.title{
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+
+}
+
+.title span{
+    color: #60F5F9;
+}
+
+
+.platform{
+    width: 80vw;
+    height: 650px;
+    padding: 0px 30px;
+    margin: 80px auto;
+    border-radius:20px;
+    box-shadow: 0px 6px 19px #00000084;
+    opacity: 1;
+}
+
+.platform-title{
+    margin-bottom: 50px;
+}
+
+.platform-content{
+    padding: 20px 30px;
+}
+
+.platform img{
+    height: 650px;
+}
+
+.platform-title-2{
+    font-size: 1.6rem;
+    color: #6748DB;
+    margin-bottom: .5rem;
+}
+
+.platform-content p{
+    margin-top: .3rem;
+}
+
+.account{
+    text-align: center;
+    margin-top: 2rem;
+    padding: 0 2rem;
+}
+
+.account h3{
+    font-size: 2.2rem;
+}
+
+.account .line{
+    width: 100%;
+    height: 1px;
+    background-color:#60F5F9;
+    margin: 3rem 0;
+}
+
+.account > div > p{
+    color: #fff;
+    font-size:1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+
+.account > div > h4{
+    color: #6748DB;
+}
+
+
+.educate{
+    margin-top: 4rem;
+    position: relative;
+    height: 400px;
+    
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('./img/educate.jpg');
+    background-position: center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+.trade{
+    margin-top: 0;
+    position: relative;
+    height: 400px;
+    
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('./img/trade.jpg');
+    background-position: center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+
+.educate-content{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+footer{
+    padding: 4rem 3rem;
+}
+
+.logo-content{
+    color: #60F5F9;
+    font-size: 1.8rem;
+    font-style: italic;
+}
+
+.navbar-toggler-icon{
+    color: #fff !important;
+}
+
+
+@media only screen and (max-width: 768px){
+    .header-box-img{
+        display:none;
+    }
+
+    html{
+        font-size:10px;
+    }
+
+    .header-box{
+        width: 300px;
+        letter-spacing:1px;
+        margin: 0 auto;
+        left: 40%;
+        
+    }
+
+    .header-box-content{
+        width: 320px
+    }
+
+    .header-box-content h3{
+        font-size:1.5rem !important;
+        width: 320px;
+    }
+
+    .platform-img{
+        display:none;
+    }
+}
