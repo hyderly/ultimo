@@ -1,5 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;700;800&display=swap');
+/* @font-face {
+    font-family: "MetralExtraBold"; 
+    src: url("./Metral/metral-extrabold.otf") format("opentype"),
+}
 
+@font-face {
+    font-family: "MetralBold"; 
+    src: url("./Metral/metral-bold.otf") format("opentype"),
+}
+
+
+@font-face {
+    font-family: "MetralRegular"; 
+    src: url("./Metral/metral-regular.otf") format("opentype"),
+} */
+
+
+@font-face {
+    font-family: "MetralExtraBold";
+    font-weight: bold;
+    src: url("./Metral/metral-extrabold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "MetralBold";
+    font-weight: bold;
+    src: url("./Metral/metral-bold.otf") format("opentype");
+}
+
+
+@font-face {
+    font-family: "MetralRegular";
+    font-weight: bold;
+    src: url("./Metral/metral-bold.otf") format("opentype");
+}
 
 *,
 *::before,
@@ -17,7 +50,7 @@ body{
     background-color: #171619;
     color: #FFFFFF;
     overflow-x: hidden;
-    font-family: 'Mukta', sans-serif;
+    font-family: 'MetralRegular', sans-serif;
 }
 
 
@@ -37,13 +70,11 @@ body{
 
 
 .navbar-brand span{
-    font-weight: bold;
-    font-size: 1.3rem !important;
-    margin-top: -10px;
+
+    color: #60F5F9;
+    font-size: 1.8rem;
+    font-style: italic;
     text-transform: uppercase;
-    background: -webkit-linear-gradient(#60FBFF, #64F9A0);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 
@@ -70,9 +101,9 @@ body{
 
 .header{
     position: relative;
-    height: 500px;
+    height: 550px;
     
-    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('./img/header.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .2)), url('./img/header.jpg');
     background-position: center center;
     background-repeat:no-repeat;
     background-size: cover;
@@ -90,21 +121,22 @@ body{
 
 .header-box-img{
     position: absolute;
-    top: 55%;
+    top: 59%;
     right: -12%;
     transform: translate(-50%, -50%);
 }
 
 .header-box-content{
-    width: 700px;
-    letter-spacing: 2px;
+    width: 800px;
+    letter-spacing: 1px;
     line-height: 1.8;
 }
 
 .header-box-content h3{
     font-size: 2.4rem;
     line-height: 1.2;
-    font-weight: 700;
+    font-weight: 900;
+    font-family: 'MetralExtraBold';
 }
 
 .text-span-1{
@@ -159,6 +191,11 @@ body{
     margin-right: 40px;
 }
 
+.btn-1:hover{
+    background-color: #60F5F9;
+    cursor: pointer;
+}
+
 
 .btn-2{
     border: 2px solid #222;
@@ -168,6 +205,11 @@ body{
     border: 3px solid #6748DB !important;
     margin-top: 20px !important;
     display: inline-block !important;
+}
+
+.btn-2:hover{
+    background-color: #6748DB;
+    cursor: pointer;
 }
 
 .btn-1:hover,
@@ -187,7 +229,7 @@ body{
     position: relative;
     height: 500px;
     
-    background-image: linear-gradient(rgba(23, 22, 25, .5), rgba(23, 22, 25, .5)), url('./img/about.PNG');
+    background-image: linear-gradient(rgba(23, 22, 25, .5), rgba(23, 22, 25, .5)), url('./img/about.png');
     background-position: right;
     background-repeat:no-repeat;
 
@@ -216,6 +258,7 @@ body{
     font-weight: 700;
     color: #fff;
     text-transform: uppercase;
+    font-family: MetralBold;
 
 }
 
@@ -229,7 +272,7 @@ body{
 .platform-img-1{
     height: 300px;
 
-    margin-top: -150px;
+    margin-top: -200px;
 }
 
 
@@ -354,6 +397,7 @@ footer{
     color: #60F5F9;
     font-size: 1.8rem;
     font-style: italic;
+    text-transform: uppercase;
 }
 
 
@@ -369,6 +413,22 @@ footer{
     margin-top: -10px
 } */
 
+
+@media only screen and (max-width: 1100px){
+
+    html{
+        font-size:12px;
+    }
+
+    .platform-img{
+        display:none;
+    }
+
+    .header-box-content{
+        width: 320px;
+        margin-left: 40px;
+    }
+}
 
 
 @media only screen and (max-width: 768px){
@@ -389,7 +449,8 @@ footer{
     }
 
     .header-box-content{
-        width: 320px
+        width: 320px;
+        margin-left: 20px;
     }
 
     .header-box-content h3{
@@ -408,9 +469,16 @@ footer{
 
     .platform{
         margin-top: 600px;
+        width: 90vw;
+        padding:0;
     }
 
     .account{
         margin-top: 100px
+    }
+
+    .btn-1,
+    .btn-2{
+        margin-right: 0;
     }
 }
